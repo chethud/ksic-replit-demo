@@ -17,7 +17,7 @@ run = "pnpm --filter @workspace/ksic-mysore-silk run dev"
 [services.production]
 build = [ "pnpm", "--filter", "@workspace/ksic-mysore-silk", "run", "build" ]
 serve = "static"
-publicDir = "artifacts/ksic-mysore-silk/dist/public"
+publicDir = "artifacts/ksic-mysore-silk/out"
 
 [[services.production.rewrites]]
 from = "/*"

@@ -1,0 +1,13 @@
+var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/app/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0modt6dn0d0t4._.js")
+R.c("server/chunks/ssr/0o91_next_dist_esm_build_templates_app-page_08f7h-qriaeyo.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1o-96txkg0kpj._.js")
+R.c("server/chunks/ssr/0o91_next_dist_0t-mb_ohlc0ik._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__01rcnrsucvzny._.js")
+R.c("server/chunks/ssr/0o91_next_dist_client_components_06ambjo0s43o3._.js")
+R.c("server/chunks/ssr/0o91_next_dist_client_components_builtin_forbidden_1sd77o_b9fpz0.js")
+R.c("server/chunks/ssr/0o91_next_dist_client_components_builtin_unauthorized_1lpy8m82e8o5t.js")
+R.c("server/chunks/ssr/0o91_next_dist_20g8dsait2pt4._.js")
+R.c("server/chunks/ssr/artifacts_ksic-mysore-silk__next-internal_server_app_page_actions_17pn42ai4wyfx.js")
+R.m(65836)
+module.exports=R.m(65836).exports

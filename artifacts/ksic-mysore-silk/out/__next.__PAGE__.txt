@@ -1,0 +1,24 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3teujtqlfnbty.js"
+3:I[56721,["$2"],"default"]
+4:I[56565,["$2"],"default"]
+8:"/_next/static/chunks/2uk_pfh3zv6k-.js"
+9:I[3909,["$2","$8"],"default"]
+a:I[75127,["$2"],"OutletBoundary"]
+b:"$Sreact.suspense"
+e:"ViewportBoundary"
+f:I[75127,["$2"],"$e"]
+10:"MetadataBoundary"
+11:I[75127,["$2"],"$10"]
+:HL["/_next/static/chunks/23dis66nc5y2s.css","style"]
+6:X
+7:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$L9",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/2uk_pfh3zv6k-.js","async":true}]],["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],"p":"$@d","v":null,"s":"$6"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/23dis66nc5y2s.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3teujtqlfnbty.js","async":true}]],["$","html",null,{"lang":"en","className":"gGo3DG_variable v0TyJW_variable","children":["$","body",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]]}],"p":"$@5","v":null,"s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[null,["$","$Lf",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L11",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Mysore Silk — A Timeless Heritage | KSIC"}],["$","meta","1",{"name":"description","content":"Discover authentic Mysore Silk from KSIC — a royal Karnataka heritage of craftsmanship, purity and timeless elegance since 1912."}],["$","meta","2",{"property":"og:title","content":"Mysore Silk — A Timeless Heritage | KSIC"}],["$","meta","3",{"property":"og:description","content":"Discover authentic Mysore Silk from KSIC — a royal Karnataka heritage of craftsmanship, purity and timeless elegance since 1912."}],["$","meta","4",{"property":"og:type","content":"website"}],["$","meta","5",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","6",{"name":"twitter:title","content":"Mysore Silk — A Timeless Heritage | KSIC"}],["$","meta","7",{"name":"twitter:description","content":"Discover authentic Mysore Silk from KSIC — a royal Karnataka heritage of craftsmanship, purity and timeless elegance since 1912."}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@12","v":null,"s":"$6"}},"a":"$@13","u":"$@14","b":"I-4fOfkeg0kLA1XmhvwbJ"}
+c:null
+6:300
+14:true
+6:C
+13:0
+5:"$undefined"
+12:"$undefined"
+d:"$undefined"
