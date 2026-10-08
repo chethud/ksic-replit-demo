@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "KSIC Mysore Silk"
+description = "A luxury editorial storefront for KSIC Mysore Silk, celebrating authentic silk, royal Karnataka heritage, and artisan craftsmanship."
+version = "1.0.0"
+id = "artifacts/ksic-mysore-silk"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25989
+
+[services.development]
+run = "pnpm --filter @workspace/ksic-mysore-silk run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ksic-mysore-silk", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ksic-mysore-silk/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25989"
+BASE_PATH = "/"
