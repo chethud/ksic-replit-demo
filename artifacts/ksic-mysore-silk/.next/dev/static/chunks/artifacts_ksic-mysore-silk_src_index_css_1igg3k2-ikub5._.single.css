@@ -675,7 +675,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .section {
-  padding-block: clamp(90px, 11vw, 155px);
+  padding-block: clamp(66px, 8vw, 114px);
 }
 
 .section-heading {
@@ -1138,7 +1138,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .services {
-  padding-block: 100px;
+  padding-block: 72px;
 }
 
 .service-grid {
@@ -1183,7 +1183,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 .newsletter {
   background: var(--soft);
   text-align: center;
-  padding: 104px 20px 110px;
+  padding: 75px 20px 79px;
 }
 
 .newsletter h2 {
@@ -1239,7 +1239,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   color: #382b2b;
   background: #fff;
   border-top: 1px solid #eadfe0;
-  padding: 70px 6vw 24px;
+  padding: 50px 6vw 24px;
 }
 
 .footer-top {
@@ -1574,7 +1574,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   }
 
   .section {
-    padding-block: 78px;
+    padding-block: 56px;
   }
 
   .section-heading {
@@ -1693,7 +1693,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   }
 
   .services {
-    padding-block: 65px;
+    padding-block: 47px;
   }
 
   .service-grid {
@@ -1723,7 +1723,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   }
 
   .newsletter {
-    padding: 78px 22px 82px;
+    padding: 56px 22px 59px;
   }
 
   .newsletter h2 {
@@ -1731,7 +1731,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   }
 
   .footer {
-    padding: 52px 25px 22px;
+    padding: 38px 25px 22px;
   }
 
   .footer-top {
