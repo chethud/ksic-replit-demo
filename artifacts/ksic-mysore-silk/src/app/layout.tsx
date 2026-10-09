@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: 'Mysore Silk — A Timeless Heritage | KSIC',
   description:
     'Discover authentic Mysore Silk from KSIC — a royal Karnataka heritage of craftsmanship, purity and timeless elegance since 1912.',
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     title: 'Mysore Silk — A Timeless Heritage | KSIC',
     description:

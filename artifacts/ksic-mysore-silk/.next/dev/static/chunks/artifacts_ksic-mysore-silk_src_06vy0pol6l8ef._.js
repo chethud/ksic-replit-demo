@@ -8,21 +8,34 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.4.0_@types+node@25.9.6_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 ;
-// The uploaded materials include the KSIC logo but not the campaign/product
-// photography named in the brief. Add filenames here once the original assets
-// are supplied; the CSS artwork remains visible in the meantime.
-const suppliedPhotoAssets = new Set();
-function AssetImage({ src, alt, className = '' }) {
-    if (!suppliedPhotoAssets.has(src)) return null;
+const availableAssets = new Set([
+    'd8_hero.jpg',
+    'd8_heritage.jpg',
+    'loom.jpg',
+    'd8_occasion.jpg',
+    'col_sarees.jpg',
+    'col_festive.jpg',
+    'col_wedding.jpg',
+    'col_menswear.jpg',
+    'col_gifts.jpg',
+    'prod_red.jpg',
+    'prod_cream.jpg',
+    'prod_green.jpg',
+    'prod_purple.jpg'
+]);
+function AssetImage({ src, alt, className = '', priority = false }) {
+    if (!availableAssets.has(src)) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
         className: className,
         src: `/ksic/assets/${src}`,
         alt: alt,
-        loading: "lazy"
+        loading: priority ? 'eager' : 'lazy',
+        fetchPriority: priority ? 'high' : 'auto',
+        decoding: "async"
     }, void 0, false, {
         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/AssetImage.tsx",
-        lineNumber: 14,
-        columnNumber: 10
+        lineNumber: 27,
+        columnNumber: 5
     }, this);
 }
 _c = AssetImage;
@@ -100,7 +113,7 @@ function Collections() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$AssetImage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: collection.asset,
-                                alt: `${collection.name} collection campaign`,
+                                alt: collection.imageAlt,
                                 className: "collection-asset"
                             }, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Collections.tsx",
@@ -208,11 +221,9 @@ function Craft() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "loom-image rv",
                     "data-parallax": true,
-                    role: "img",
-                    "aria-label": "Abstract loom-inspired composition of interlacing silk threads",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$AssetImage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "loom.jpg",
-                        alt: "The art of the loom",
+                        alt: "Illustrative generated close-up of an artisan's hands weaving crimson silk with gold zari on a wooden handloom, with jasmine on the loom.",
                         className: "campaign-asset"
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
@@ -232,7 +243,7 @@ function Craft() {
                             children: "The art of the loom"
                         }, void 0, false, {
                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                            lineNumber: 11,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -241,27 +252,27 @@ function Craft() {
                                 "Crafted by",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 16,
                                     columnNumber: 43
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                     children: "Generations"
                                 }, void 0, false, {
                                     fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                    lineNumber: 12,
+                                    lineNumber: 16,
                                     columnNumber: 49
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                            lineNumber: 12,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             children: "Every thread carries the hands, patience and precision of generations of Mysorean artisans."
                         }, void 0, false, {
                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                            lineNumber: 13,
+                            lineNumber: 17,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -273,14 +284,14 @@ function Craft() {
                                             children: "01 —"
                                         }, void 0, false, {
                                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                            lineNumber: 14,
+                                            lineNumber: 18,
                                             columnNumber: 48
                                         }, this),
                                         " Pure natural silk"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                    lineNumber: 14,
+                                    lineNumber: 18,
                                     columnNumber: 42
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -289,14 +300,14 @@ function Craft() {
                                             children: "02 —"
                                         }, void 0, false, {
                                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                            lineNumber: 14,
+                                            lineNumber: 18,
                                             columnNumber: 90
                                         }, this),
                                         " Pure gold zari"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                    lineNumber: 14,
+                                    lineNumber: 18,
                                     columnNumber: 84
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -305,26 +316,26 @@ function Craft() {
                                             children: "03 —"
                                         }, void 0, false, {
                                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                            lineNumber: 14,
+                                            lineNumber: 18,
                                             columnNumber: 129
                                         }, this),
                                         " Coded authenticity"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                                    lineNumber: 14,
+                                    lineNumber: 18,
                                     columnNumber: 123
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                            lineNumber: 14,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Craft.tsx",
-                    lineNumber: 10,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, this)
             ]
@@ -415,12 +426,10 @@ function FeaturedProducts({ favorites, onToggleFavorite, onAddToBag }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "product-art",
-                                role: "img",
-                                "aria-label": `Abstract silk-texture colour study for ${product.name}; illustrative artwork, not product photography`,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$AssetImage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: product.asset,
-                                        alt: `${product.name} product view`,
+                                        alt: product.imageAlt,
                                         className: "product-asset"
                                     }, void 0, false, {
                                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/FeaturedProducts.tsx",
@@ -630,12 +639,10 @@ function Heritage() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "heritage-image rv",
                 "data-parallax": true,
-                role: "img",
-                "aria-label": "Abstract editorial artwork inspired by Mysore's royal silk heritage",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$AssetImage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "d8_heritage.jpg",
-                        alt: "Mysore silk heritage campaign",
+                        alt: "Illustrative generated portrait of a woman in an ivory silk saree with a gold zari border, gold jewellery and Mallige flowers in her hair.",
                         className: "campaign-asset"
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Heritage.tsx",
@@ -647,7 +654,7 @@ function Heritage() {
                         children: "A legacy, held in every thread."
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Heritage.tsx",
-                        lineNumber: 14,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this)
                 ]
@@ -691,13 +698,12 @@ function Hero({ slide, onSlideChange }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "hero-art",
-                role: "img",
-                "aria-label": "Abstract silk-inspired campaign artwork in deep Mysore maroon and rose",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$AssetImage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         src: "d8_hero.jpg",
-                        alt: "Mysore Silk campaign",
-                        className: "campaign-asset"
+                        alt: "Illustrative generated campaign image of a woman in a crimson silk saree with gold zari and Mallige flowers in her hair, standing in a palace arcade.",
+                        className: "campaign-asset",
+                        priority: true
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
                         lineNumber: 13,
@@ -710,20 +716,20 @@ function Hero({ slide, onSlideChange }) {
                                 className: "silk-fold fold-one"
                             }, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 14,
+                                lineNumber: 19,
                                 columnNumber: 38
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                 className: "silk-fold fold-two"
                             }, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 14,
+                                lineNumber: 19,
                                 columnNumber: 74
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 14,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -731,7 +737,7 @@ function Hero({ slide, onSlideChange }) {
                         children: "A Mysore original · Since 1912"
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 15,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this)
                 ]
@@ -744,7 +750,7 @@ function Hero({ slide, onSlideChange }) {
                 variant: "hero"
             }, void 0, false, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                lineNumber: 17,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -755,7 +761,7 @@ function Hero({ slide, onSlideChange }) {
                         children: "Karnataka's pride"
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 19,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -767,13 +773,13 @@ function Hero({ slide, onSlideChange }) {
                                 children: "A Timeless Heritage"
                             }, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 20,
+                                lineNumber: 25,
                                 columnNumber: 69
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 20,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -781,7 +787,7 @@ function Hero({ slide, onSlideChange }) {
                         children: "Exquisite weaves from the royal land of Mysore. Tradition, elegance and craftsmanship for generations."
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 21,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -792,7 +798,7 @@ function Hero({ slide, onSlideChange }) {
                                 children: "Explore Collections"
                             }, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 22,
+                                lineNumber: 27,
                                 columnNumber: 57
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -801,19 +807,19 @@ function Hero({ slide, onSlideChange }) {
                                 children: "→"
                             }, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 22,
+                                lineNumber: 27,
                                 columnNumber: 89
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 22,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                lineNumber: 18,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -834,12 +840,12 @@ function Hero({ slide, onSlideChange }) {
                                 onClick: ()=>onSlideChange(number)
                             }, number, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 26,
+                                lineNumber: 31,
                                 columnNumber: 38
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 25,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -851,20 +857,20 @@ function Hero({ slide, onSlideChange }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                                lineNumber: 28,
+                                lineNumber: 33,
                                 columnNumber: 15
                             }, this),
                             "  /  03"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                        lineNumber: 28,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Hero.tsx",
-                lineNumber: 24,
+                lineNumber: 29,
                 columnNumber: 7
             }, this)
         ]
@@ -1687,7 +1693,7 @@ function Occasion() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$AssetImage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 src: "d8_occasion.jpg",
-                alt: "Wedding collection campaign",
+                alt: "Illustrative generated campaign image of a woman in a burgundy silk saree with a sweeping gold zari pallu, Mallige flowers in her braid and palace pillars behind her.",
                 className: "campaign-asset"
             }, void 0, false, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
@@ -1700,14 +1706,14 @@ function Occasion() {
                 "aria-hidden": "true"
             }, void 0, false, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                lineNumber: 8,
+                lineNumber: 12,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$ksic$2d$mysore$2d$silk$2f$src$2f$components$2f$Petals$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 variant: "occasion"
             }, void 0, false, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                lineNumber: 9,
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1718,7 +1724,7 @@ function Occasion() {
                         children: "An heirloom for the extraordinary"
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                        lineNumber: 11,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1727,14 +1733,14 @@ function Occasion() {
                             "Tradition, woven into life's",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                                lineNumber: 12,
+                                lineNumber: 16,
                                 columnNumber: 59
                             }, this),
                             "special moments"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                        lineNumber: 12,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$4$2e$0_$40$types$2b$node$40$25$2e$9$2e$6_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1743,13 +1749,13 @@ function Occasion() {
                         children: "Explore Wedding Collection →"
                     }, void 0, false, {
                         fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                        lineNumber: 13,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/artifacts/ksic-mysore-silk/src/components/Occasion.tsx",
-                lineNumber: 10,
+                lineNumber: 14,
                 columnNumber: 7
             }, this)
         ]
@@ -2836,55 +2842,64 @@ const products = [
         category: 'Mysore Silk',
         name: 'Royal Crimson Silk Saree',
         price: '₹24,500',
-        asset: 'prod_red.jpg'
+        asset: 'prod_red.jpg',
+        imageAlt: 'Illustrative generated image of a folded crimson silk saree with gold zari and the Gandaberunda motif, arranged with jasmine.'
     },
     {
         id: 'ivory',
         category: 'Mysore Silk',
         name: 'Ivory Gold Zari Saree',
         price: '₹28,900',
-        asset: 'prod_cream.jpg'
+        asset: 'prod_cream.jpg',
+        imageAlt: 'Illustrative generated image of a folded ivory silk saree with a gold Gandaberunda zari border and jasmine.'
     },
     {
         id: 'emerald',
         category: 'Mysore Silk',
         name: 'Emerald Heirloom Saree',
         price: '₹26,800',
-        asset: 'prod_green.jpg'
+        asset: 'prod_green.jpg',
+        imageAlt: 'Illustrative generated image of a folded emerald silk saree with gold zari and the Gandaberunda motif, arranged with jasmine.'
     },
     {
         id: 'plum',
         category: 'Mysore Silk',
         name: 'Evening Plum Silk Saree',
         price: '₹25,600',
-        asset: 'prod_purple.jpg'
+        asset: 'prod_purple.jpg',
+        imageAlt: 'Illustrative generated image of a folded plum silk saree with gold zari and a peacock-inspired border, arranged with jasmine.'
     }
 ];
 const collections = [
     {
         name: 'Sarees',
         description: 'A legacy in every drape',
-        asset: 'col_sarees.jpg'
+        asset: 'col_sarees.jpg',
+        imageAlt: 'Illustrative generated campaign image of a woman in a crimson silk saree with gold zari and a Gandaberunda motif.'
     },
     {
         name: 'Festive',
         description: 'For days that shine',
-        asset: 'col_festive.jpg'
+        asset: 'col_festive.jpg',
+        imageAlt: 'Illustrative generated campaign image of a woman in an emerald silk saree with gold zari and jasmine in her hair.'
     },
     {
         name: 'Wedding',
         description: 'Made for the moment',
-        asset: 'col_wedding.jpg'
+        asset: 'col_wedding.jpg',
+        imageAlt: 'Illustrative generated campaign image of a bride in a crimson silk saree with gold zari and Mallige woven through her braid.'
     },
     {
         name: 'Menswear',
         description: 'The considered classic',
-        asset: 'col_menswear.jpg'
+        asset: 'col_menswear.jpg',
+        imageAlt: 'Illustrative generated campaign image of a man in ivory traditional menswear with a gold-bordered dhoti in a palace arcade.'
     },
     {
         name: 'Gifts',
         description: 'A keepsake of Karnataka',
-        asset: 'col_gifts.jpg'
+        asset: 'col_gifts.jpg',
+        imageAlt: 'Illustrative generated image of a crimson silk saree in a gift box, with a gold Gandaberunda motif and jasmine flowers.'
     }
 ];
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

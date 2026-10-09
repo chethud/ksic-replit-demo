@@ -61,6 +61,9 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$p
 const metadata = {
     title: 'Mysore Silk — A Timeless Heritage | KSIC',
     description: 'Discover authentic Mysore Silk from KSIC — a royal Karnataka heritage of craftsmanship, purity and timeless elegance since 1912.',
+    icons: {
+        icon: '/favicon.svg'
+    },
     openGraph: {
         title: 'Mysore Silk — A Timeless Heritage | KSIC',
         description: 'Discover authentic Mysore Silk from KSIC — a royal Karnataka heritage of craftsmanship, purity and timeless elegance since 1912.',
@@ -80,12 +83,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/artifacts/ksic-mysore-silk/src/app/layout.tsx",
-            lineNumber: 43,
+            lineNumber: 46,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/artifacts/ksic-mysore-silk/src/app/layout.tsx",
-        lineNumber: 42,
+        lineNumber: 45,
         columnNumber: 5
     }, this);
 }

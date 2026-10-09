@@ -18,8 +18,8 @@ export default function FeaturedProducts({ favorites, onToggleFavorite, onAddToB
       <div className="product-grid" data-stagger="70">
         {products.map((product: Product) => (
           <article className="product rv" key={product.id} data-testid={`card-product-${product.id}`}>
-            <div className="product-art" role="img" aria-label={`Abstract silk-texture colour study for ${product.name}; illustrative artwork, not product photography`}>
-              <AssetImage src={product.asset} alt={`${product.name} product view`} className="product-asset" />
+            <div className="product-art">
+              <AssetImage src={product.asset} alt={product.imageAlt} className="product-asset" />
               <div className="product-fabric" aria-hidden="true" />
               <div className="product-actions">
                 <button className="icon-button" aria-label={`${favorites.includes(product.id) ? 'Remove' : 'Add'} ${product.name} ${favorites.includes(product.id) ? 'from' : 'to'} wishlist`} data-testid={`button-favorite-${product.id}`} onClick={() => onToggleFavorite(product.id, product.name)}><Icon name="heart" /></button>

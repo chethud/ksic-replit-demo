@@ -4,8 +4,12 @@ export default function Craft() {
   return (
     <section className="section craft" id="craft">
       <div className="craft-inner wrap">
-        <div className="loom-image rv" data-parallax role="img" aria-label="Abstract loom-inspired composition of interlacing silk threads">
-          <AssetImage src="loom.jpg" alt="The art of the loom" className="campaign-asset" />
+        <div className="loom-image rv" data-parallax>
+          <AssetImage
+            src="loom.jpg"
+            alt="Illustrative generated close-up of an artisan's hands weaving crimson silk with gold zari on a wooden handloom, with jasmine on the loom."
+            className="campaign-asset"
+          />
         </div>
         <div className="craft-copy rv">
           <div className="eyebrow">The art of the loom</div>

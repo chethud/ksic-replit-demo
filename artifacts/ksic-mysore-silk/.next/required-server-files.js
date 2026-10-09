@@ -71,9 +71,7 @@ self.__SERVER_FILES_MANIFEST={
       "unoptimized": true,
       "customCacheHandler": false
     },
-    "devIndicators": {
-      "position": "bottom-left"
-    },
+    "devIndicators": false,
     "onDemandEntries": {
       "maxInactiveAge": 60000,
       "pagesBufferLength": 5
@@ -108,7 +106,9 @@ self.__SERVER_FILES_MANIFEST={
     },
     "outputFileTracingRoot": "/home/runner/workspace",
     "allowedDevOrigins": [
-      "127.0.0.1"
+      "127.0.0.1",
+      "*.replit.dev",
+      "*.pike.replit.dev"
     ],
     "enablePrerenderSourceMaps": true,
     "cacheComponents": false,

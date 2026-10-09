@@ -2,14 +2,35 @@ interface AssetImageProps {
   src: string;
   alt: string;
   className?: string;
+  priority?: boolean;
 }
 
-// The uploaded materials include the KSIC logo but not the campaign/product
-// photography named in the brief. Add filenames here once the original assets
-// are supplied; the CSS artwork remains visible in the meantime.
-const suppliedPhotoAssets = new Set<string>();
+const availableAssets = new Set([
+  'd8_hero.jpg',
+  'd8_heritage.jpg',
+  'loom.jpg',
+  'd8_occasion.jpg',
+  'col_sarees.jpg',
+  'col_festive.jpg',
+  'col_wedding.jpg',
+  'col_menswear.jpg',
+  'col_gifts.jpg',
+  'prod_red.jpg',
+  'prod_cream.jpg',
+  'prod_green.jpg',
+  'prod_purple.jpg',
+]);
 
-export default function AssetImage({ src, alt, className = '' }: AssetImageProps) {
-  if (!suppliedPhotoAssets.has(src)) return null;
-  return <img className={className} src={`/ksic/assets/${src}`} alt={alt} loading="lazy" />;
+export default function AssetImage({ src, alt, className = '', priority = false }: AssetImageProps) {
+  if (!availableAssets.has(src)) return null;
+  return (
+    <img
+      className={className}
+      src={`/ksic/assets/${src}`}
+      alt={alt}
+      loading={priority ? 'eager' : 'lazy'}
+      fetchPriority={priority ? 'high' : 'auto'}
+      decoding="async"
+    />
+  );
 }

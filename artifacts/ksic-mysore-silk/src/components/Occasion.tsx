@@ -4,7 +4,11 @@ import Petals from './Petals';
 export default function Occasion() {
   return (
     <section className="occasion" id="occasion">
-      <AssetImage src="d8_occasion.jpg" alt="Wedding collection campaign" className="campaign-asset" />
+      <AssetImage
+        src="d8_occasion.jpg"
+        alt="Illustrative generated campaign image of a woman in a burgundy silk saree with a sweeping gold zari pallu, Mallige flowers in her braid and palace pillars behind her."
+        className="campaign-asset"
+      />
       <div className="occasion-art" data-parallax aria-hidden="true" />
       <Petals variant="occasion" />
       <div className="occasion-content rv">

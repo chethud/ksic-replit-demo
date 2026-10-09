@@ -192,6 +192,54 @@
   inset: 0;
 }
 
+.campaign-asset[src$="d8_hero.jpg"] {
+  object-position: 74% center;
+}
+
+.campaign-asset[src$="d8_heritage.jpg"] {
+  object-position: 39% center;
+}
+
+.campaign-asset[src$="loom.jpg"] {
+  object-position: 53% center;
+}
+
+.campaign-asset[src$="d8_occasion.jpg"] {
+  object-position: 48% 43%;
+}
+
+.collection-asset[src$="col_sarees.jpg"] {
+  object-position: 36% center;
+}
+
+.collection-asset[src$="col_festive.jpg"] {
+  object-position: 54% center;
+}
+
+.collection-asset[src$="col_wedding.jpg"], .collection-asset[src$="col_menswear.jpg"] {
+  object-position: 56% center;
+}
+
+.collection-asset[src$="col_gifts.jpg"] {
+  object-position: 50% center;
+}
+
+.product-asset[src$="prod_red.jpg"] {
+  object-position: 52% center;
+}
+
+.product-asset[src$="prod_cream.jpg"] {
+  object-position: 53% center;
+}
+
+.product-asset[src$="prod_green.jpg"] {
+  object-position: 52% center;
+}
+
+.product-asset[src$="prod_purple.jpg"] {
+  object-position: 51% center;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
@@ -924,9 +972,11 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 
 .heritage-image:after {
   content: "MYSORE · 1912";
+  z-index: 2;
   color: #fff1e8;
   letter-spacing: .2em;
   writing-mode: vertical-rl;
+  text-shadow: 0 1px 8px #321a1b80;
   font-size: 9px;
   position: absolute;
   bottom: 13%;
@@ -1145,14 +1195,14 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 .occasion-art {
   z-index: 1;
   transform: scale(1.05) translateY(var(--parallax-y, 0px));
-  background: repeating-linear-gradient(104deg, #0000 0 17px, #ffecdd20 18px, #0000 21px 37px), linear-gradient(125deg, #451325, #934153 48%, #db9b90);
+  background: repeating-linear-gradient(104deg, #0000 0 17px, #ffecdd12 18px, #0000 21px 37px), linear-gradient(125deg, #36141f66, #52202d4d 48%, #4c1c2761);
   position: absolute;
   inset: -8%;
 }
 
 .occasion-art:before {
   content: "";
-  background: radial-gradient(at 50% 52%, #0000 0, #34131e88 100%);
+  background: radial-gradient(at 50% 52%, #0000 10%, #34131e54 100%);
   position: absolute;
   inset: 0;
 }
@@ -1278,8 +1328,9 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .footer {
-  color: #f9eeeb;
-  background: #321e23;
+  color: #382b2b;
+  background: #fff;
+  border-top: 1px solid #eadfe0;
   padding: 70px 6vw 24px;
 }
 
@@ -1291,13 +1342,13 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .footer-brand img {
-  filter: brightness(1.8);
-  mix-blend-mode: screen;
+  filter: none;
+  mix-blend-mode: normal;
   width: 164px;
 }
 
 .footer-brand p {
-  color: #d9c4c4;
+  color: #655354;
   max-width: 250px;
   font: italic 19px/1.5 var(--app-font-serif);
   margin-top: 25px;
@@ -1310,7 +1361,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .social-links a {
-  color: #e2d4d2;
+  color: #715e5c;
   width: 20px;
   height: 20px;
 }
@@ -1326,11 +1377,11 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .social-links a:hover {
-  color: #d5b184;
+  color: #8c6935;
 }
 
 .footer-col h3 {
-  color: #d5b184;
+  color: #8c6935;
   letter-spacing: .16em;
   margin: 7px 0 23px;
   font-size: 9px;
@@ -1338,7 +1389,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .footer-col a {
-  color: #e2d4d2;
+  color: #544748;
   width: max-content;
   margin: 13px 0;
   font-size: 10px;
@@ -1346,12 +1397,12 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 .footer-col a:hover {
-  color: #fff;
+  color: var(--maroon);
 }
 
 .footer-bottom {
-  color: #c8b8b8;
-  border-top: 1px solid #ffffff25;
+  color: #766768;
+  border-top: 1px solid #eadfe0;
   justify-content: space-between;
   align-items: center;
   gap: 20px;

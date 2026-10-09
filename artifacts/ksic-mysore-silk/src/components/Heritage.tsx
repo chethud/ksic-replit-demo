@@ -9,8 +9,12 @@ export default function Heritage() {
         <p>Born from the royal traditions of Mysore, our silk carries a legacy of craftsmanship, purity and timeless elegance.</p>
         <a className="text-link" href="#craft">Discover Our Story →</a>
       </div>
-      <div className="heritage-image rv" data-parallax role="img" aria-label="Abstract editorial artwork inspired by Mysore's royal silk heritage">
-        <AssetImage src="d8_heritage.jpg" alt="Mysore silk heritage campaign" className="campaign-asset" />
+      <div className="heritage-image rv" data-parallax>
+        <AssetImage
+          src="d8_heritage.jpg"
+          alt="Illustrative generated portrait of a woman in an ivory silk saree with a gold zari border, gold jewellery and Mallige flowers in her hair."
+          className="campaign-asset"
+        />
         <span className="image-caption">A legacy, held in every thread.</span>
       </div>
     </section>

@@ -1,0 +1,1 @@
+- [KSIC visual direction](ksic-visual-direction.md) — premium, minimalist imagery with sarees, Gandaberunda, and Mallige; keep the footer white.

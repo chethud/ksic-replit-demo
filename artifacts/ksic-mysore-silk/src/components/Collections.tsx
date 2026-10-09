@@ -11,7 +11,7 @@ export default function Collections() {
       <div className="collections-grid" data-stagger="80">
         {collections.map((collection, index) => (
           <a className="collection rv" href={index === 2 ? '#occasion' : '#signature'} key={collection.name} aria-label={`Discover ${collection.name}`}>
-            <AssetImage src={collection.asset} alt={`${collection.name} collection campaign`} className="collection-asset" />
+            <AssetImage src={collection.asset} alt={collection.imageAlt} className="collection-asset" />
             <span className="fabric-panel" aria-hidden="true" /><span className="collection-shade" />
             <span className="collection-label"><span><strong>{collection.name}</strong><small>{collection.description}</small></span><span className="collection-arrow" aria-hidden="true">→</span></span>
           </a>

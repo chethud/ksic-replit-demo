@@ -9,8 +9,13 @@ interface HeroProps {
 export default function Hero({ slide, onSlideChange }: HeroProps) {
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
-      <div className="hero-art" role="img" aria-label="Abstract silk-inspired campaign artwork in deep Mysore maroon and rose">
-        <AssetImage src="d8_hero.jpg" alt="Mysore Silk campaign" className="campaign-asset" />
+      <div className="hero-art">
+        <AssetImage
+          src="d8_hero.jpg"
+          alt="Illustrative generated campaign image of a woman in a crimson silk saree with gold zari and Mallige flowers in her hair, standing in a palace arcade."
+          className="campaign-asset"
+          priority
+        />
         <div className="silk-visual"><i className="silk-fold fold-one" /><i className="silk-fold fold-two" /></div>
         <span className="hero-art-note">A Mysore original · Since 1912</span>
       </div>

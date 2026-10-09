@@ -1,3 +1,5 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+  <circle cx="90" cy="90" r="84" fill="#7A1530"/>
+  <circle cx="90" cy="90" r="78" stroke="#D6B176" stroke-width="2"/>
+  <text x="90" y="99" text-anchor="middle" fill="#FFF9F1" font-family="Georgia, serif" font-size="37" font-style="italic" letter-spacing="1">KSIC</text>
 </svg>
